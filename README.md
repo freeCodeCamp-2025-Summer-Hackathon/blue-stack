@@ -2,3 +2,4 @@ Excited to start this hackathon! Btw my GitHub name is shy-away but my Discord h
 I'm happy to be here! I hope i did this right, i'm a github noob.. -tsb
 Hello! B
 Hello! This is Saurr!
+Hey- Cephira here- Hoping I did this right, Exited to learn new things.
