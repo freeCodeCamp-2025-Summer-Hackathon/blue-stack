@@ -1,5 +1,5 @@
 Excited to start this hackathon! Btw my GitHub name is shy-away but my Discord handle is chessbored... that definitely won't confuse anyone...
-I'm happy to be here! I hope i did this right, i'm a github noob.. -tsb
+I'm happy to be here! I hope i did this right, i'm a github noob.. -tsb, test before hackathon!
 Hello! B
 Hello! This is Saurr!
 Hey- Cephira here- Hoping I did this right, Exited to learn new things.
