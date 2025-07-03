@@ -36,6 +36,8 @@ tips for others by commenting on shared recipes.
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
+
+
 ## Getting Started
 
 To clone this repository using SSH, follow these steps:
@@ -57,6 +59,42 @@ To clone this repository using SSH, follow these steps:
    ```bash
    git clone git@github.com:your-username/your-repository.git #Example
 
+## From Our 1st Meeting 
+
+**Roles**
+cephira- Recipe page 
+brandi- Nav bar 
+tsb- Buttons
+tsb gf-logo vector format svg file 
+bilbo- footer 
+qweDev-About page
+salamander- Doc clean up
+Chessboard- Roullete Wheel
+saurr-Log in page
+slater- Newspage
+
+**Notes**
+![Notes from first meeting](https://i.ibb.co/Hf4wDchY/image.png)
+
+**Color Pallet**
+![Color Pallet](https://i.ibb.co/PZ0st5pK/color-pallet.png)
+
+**Summary of Brainstorming**
+Navigation Bar Links
+Home | Recipes | Blog/News | About | Contact
+
+Buttons/Fields
+Login | Submit Recipe | Newsletter/Email Signup | Search
+
+Footer
+Site Map | Socials
+
+Inspiration Site: recipepress.inspirythemes.com
+
+
+
+
+
 ## Development
 
 ### Workflow
@@ -66,3 +104,5 @@ To clone this repository using SSH, follow these steps:
 ### Deployment
 
 ## Contact
+
+[def]: https://i.ibb.co/Hf4wDchY/image.png
