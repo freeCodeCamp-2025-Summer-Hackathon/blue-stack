@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --roulette-card-border-radius: 20px;
+  --primary-font-color: #2e2e2e;
+}
+
+html {
+  background-color: #fafafa;
+}
+
+#roulette {
+  width: 100%;
+  margin: 20px auto 0;
+  padding: 20px;
+
+  /* TODO: delete later */
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+}
+
+#roulette > h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--primary-font-color);
+  text-align: center;
+}
+
+#roulette-button-container {
+  margin: 10px auto;
+  text-align: center;
+}
+
+#roulette-button {
+  font-weight: 600;
+  font-family: "Lato", "Nunito", "Inter", sans-serif;
+  background-color: #f4c29d;
+  color: var(--primary-font-color);
+  padding: 5px;
+  border-radius: 5px;
+
+  /* TODO: get guidance from @tsb for further button styling*/
+}
+
+.roulette-card {
+  background-color: #ffffff;
+  border: #e3e3e3 1px solid;
+  border-radius: var(--roulette-card-border-radius);
+  width: 250px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: var(--roulette-card-border-radius);
+  border-top-right-radius: var(--roulette-card-border-radius);
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-header {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: var(--primary-font-color);
+}
+
+.card-description {
+  position: relative;
+  font-family: "Lato", "Nunito", "Inter", sans-serif;
+  font-weight: 400;
+  color: #5e5e5e;
+  height: 3.6em;
+  overflow: hidden;
+}
+
+/* Fade effect source: https://css-tricks.com/line-clampin/ */
+.card-description::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 50%
+  );
+}
