@@ -10,6 +10,7 @@
         <li><a href="#key-features">Key Features</a></li>
       </ul>
     <li><a href="technologies-used">Technologies Used</a></li>
+    <li>Color Palette</li>
   </ul>
 </details>
 
@@ -91,7 +92,8 @@ Site Map | Socials
 
 Inspiration Site: recipepress.inspirythemes.com
 
-
+## Color Palette
+Deep Fir: #003300
 
 
 
