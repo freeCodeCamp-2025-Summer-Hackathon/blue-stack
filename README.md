@@ -94,6 +94,7 @@ Inspiration Site: recipepress.inspirythemes.com
 
 ## Color Palette
 Deep Fir: #003300
+Fern Green: #55883B
 
 
 
