@@ -1,4 +1,4 @@
-// TODO: automate card creation based on data
+// TODO: automate card creation once we have proper recipe data
 const card1 = {
   name: "Apple",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
@@ -26,7 +26,7 @@ function createCards() {
   const allCards = [...cards, ...cards, ...cards];
   wrapper.innerHTML = allCards
     .map(
-      // TODO: remove uses of index (which was for debugging purposes)
+      // TODO: remove index in card header when we have proper recipe data
       (card, i) => `
       <div class="roulette-card" id="card-${i}">
         <div class="card-image">
@@ -75,7 +75,7 @@ function spin() {
       cardWidth * cards.length + cardWidth / 2 + randomCard * cardWidth
     }px)`;
 
-    // scale up the selected card
+    // accentuate the selected card
     const selectedCard = document.querySelector(
       `#card-${randomCard + cards.length}`
     );
