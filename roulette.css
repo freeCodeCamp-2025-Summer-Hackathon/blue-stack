@@ -17,11 +17,6 @@ html {
 #roulette {
   width: 100%;
   padding: 20px;
-
-  /* TODO: delete later */
-  margin: 20px auto 0;
-  border-top: black 1px solid;
-  border-bottom: black 1px solid;
 }
 
 #roulette > h2 {
@@ -44,7 +39,7 @@ html {
   border-radius: 8px;
   padding: 5px;
 
-  /* TODO: get guidance from @tsb for further button styling*/
+  /* TODO: get guidance from @tsb for further button styling */
 }
 
 #roulette-card-container {
@@ -90,6 +85,7 @@ html {
   position: absolute;
   transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
 
+  /* initially center the roulette */
   left: 50%;
   transform: translateX(-50%);
 }
