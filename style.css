@@ -1,4 +1,41 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url(fonts/Lexend-Regular.ttf);
+}
 body {
-    background-color: #f0f0f0;
+    background-color: #559357;
     font-family: Arial, sans-serif;
+}
+
+.login-btn {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    border-radius: 6px
+}
+
+.signup-btn {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    border-radius: 6px
+}
+
+.submit-recipe-btn {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    border-radius: 6px
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border-radius: 18px;
+    background-color: #d8facf;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: 9px;
+    outline: none;
+    border: none;
+    background: transparent;
 }
