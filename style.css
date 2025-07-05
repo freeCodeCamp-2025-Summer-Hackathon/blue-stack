@@ -3,7 +3,7 @@
     src: url(fonts/Lexend-Regular.ttf);
 }
 body {
-    background-color: #559357;
+    background-color: #e6f0dc;
     font-family: Arial, sans-serif;
 }
 
@@ -28,7 +28,7 @@ body {
     align-items: center;
     padding: 9px;
     border-radius: 18px;
-    background-color: #d8facf;
+    background-color: #ffffff;
 }
 
 .search-input {
