@@ -5,20 +5,21 @@
 }
 
 :root {
-  --roulette-card-border-radius: 20px;
+  --roulette-card-border-radius: 10px;
   --primary-font-color: #2e2e2e;
+  --primary-background-color: #fafafa;
 }
 
 html {
-  background-color: #fafafa;
+  background-color: var(--primary-background-color);
 }
 
 #roulette {
   width: 100%;
-  margin: 20px auto 0;
   padding: 20px;
 
   /* TODO: delete later */
+  margin: 20px auto 0;
   border-top: black 1px solid;
   border-bottom: black 1px solid;
 }
@@ -40,22 +41,72 @@ html {
   font-family: "Lato", "Nunito", "Inter", sans-serif;
   background-color: #f4c29d;
   color: var(--primary-font-color);
+  border-radius: 8px;
   padding: 5px;
-  border-radius: 5px;
 
   /* TODO: get guidance from @tsb for further button styling*/
+}
+
+#roulette-card-container {
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#roulette-card-container::before {
+  content: "";
+  text-align: right;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    var(--primary-background-color),
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0) 70%,
+    var(--primary-background-color) 100%
+  );
+  z-index: 1;
+}
+
+#roulette-fade {
+  /* roulette fade-in and fade-out */
+  content: "";
+  text-align: right;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: background-color 1s ease-in-out;
+}
+
+#roulette-card-wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .roulette-card {
   background-color: #ffffff;
   border: #e3e3e3 1px solid;
+  transition: transform 0.5s ease-in-out;
   border-radius: var(--roulette-card-border-radius);
   width: 250px;
+  height: 350px;
+  margin: 0 5px;
 }
 
 .card-image img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   border-top-left-radius: var(--roulette-card-border-radius);
   border-top-right-radius: var(--roulette-card-border-radius);

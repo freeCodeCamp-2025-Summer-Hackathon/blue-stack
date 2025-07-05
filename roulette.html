@@ -16,27 +16,16 @@
   <div id="roulette">
     <h2>Spin the wheel for a random recipe!</h2>
     <div id="roulette-button-container">
-      <button id="roulette-button">Spin</button>
+      <button id="roulette-button" onclick="spin()">Spin</button>
     </div>
-    <div class="roulette-card">
-      <div class="card-image">
-        <img src="./test_recipes/apple-1702316_640.jpg" alt="Recipe Image" />
-      </div>
-      <div class="card-info">
-        <div class="card-header">
-          <h3>Recipe Name</h3>
-        </div>
-        <div class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.</div>
-      </div>
+    <div id="roulette-card-container">
+      <div id="roulette-card-wrapper"></div>
     </div>
+
+    <script src="./roulette.js"></script>
+
     <!--
-            Starting idea: box with random recipe image/title
-            button above to find a random recipe
-    
-            Coordinate with C3ph1r4 for recipe data?
-    
-            Another idea: recipe cards that scroll sideways, roulette button would make the cards "spin" and stop on a random one
-            Would require a lot more learning re animation, but maybe that's a good thing!
-        -->
+        TODO: coordinate with C3ph1r4 for recipe data
+    -->
   </div>
 </body>
