@@ -1,23 +1,41 @@
-// TODO: automate card creation once we have proper recipe data
+// TODO: create cards from database if/when that's implemented
 const card1 = {
-  name: "Apple",
+  name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./test_recipes/apple-1702316_640.jpg",
+  image: "../recipe-page/recipes/assets/Candied-fire-bacon.webp",
 };
 
 const card2 = {
-  name: "Banana",
+  name: "Fusion Sticky Mango Rice",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./test_recipes/banana-325461_640.jpg",
+  image: "../recipe-page/recipes/assets/Fusion-Sticky-mango-rice.webp",
 };
 
 const card3 = {
-  name: "Cherry",
+  name: "Galangal",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./test_recipes/cherries-3477927_640.jpg",
+  image: "../recipe-page/recipes/assets/galangal.webp",
 };
 
-const cards = [card1, card2, card3];
+const card4 = {
+  name: "Spicy Albondigas",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+  image: "../recipe-page/recipes/assets/Spicy-Albondigas.webp",
+};
+
+const card5 = {
+  name: "Sushi",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+  image: "../recipe-page/recipes/assets/Sushi.webp",
+};
+
+const card6 = {
+  name: "Tom Kha Gai",
+  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+  image: "../recipe-page/recipes/assets/Tom-Kha-Gai.webp",
+};
+
+const cards = [card1, card2, card3, card4, card5, card6];
 const wrapper = document.querySelector("#roulette-card-wrapper");
 let isSpinning = false;
 
@@ -26,7 +44,6 @@ function createCards() {
   const allCards = [...cards, ...cards, ...cards];
   wrapper.innerHTML = allCards
     .map(
-      // TODO: remove index in card header when we have proper recipe data
       (card, i) => `
       <div class="roulette-card" id="card-${i}">
         <div class="card-image">
@@ -34,7 +51,7 @@ function createCards() {
         </div>
         <div class="card-info">
           <div class="card-header">
-            <h3>${i} ${card.name}</h3>
+            <h3>${card.name}</h3>
           </div>
           <div class="card-description">
             ${card.desc}
