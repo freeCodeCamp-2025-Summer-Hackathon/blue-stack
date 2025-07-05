@@ -1,4 +1,5 @@
 // TODO: create cards from database if/when that's implemented
+// TODO: implement proper descriptions once C3ph1r4 has them written
 const card1 = {
   name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
