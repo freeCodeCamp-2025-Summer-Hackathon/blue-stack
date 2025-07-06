@@ -1,67 +1,55 @@
+## 🎨 Color Palette
 
-## Color Palette
-| Color Use              | Name          | Hex Code  | Description                               |
-| ---------------------- | ------------- | --------- | ----------------------------------------- |
-| **Primary Font**       | Charcoal      | `#2E2E2E` | Deep neutral for strong contrast          |
-| **Secondary Font**     | Slate Gray    | `#5A5A5A` | Softer body text or subheadings           |
-| **Main Background**    | Porcelain     | `#FAFAFA` | Clean, white-ish neutral background       |
-| **Content Background** | Snow          | `#FFFFFF` | Used for cards and modals                 |
-| **Accent 1**           | Sage Green    | `#A8CBB7` | Natural, organic accent color             |
-| **Accent 2**           | Warm Apricot  | `#F4C29D` | Warmth and friendliness (e.g. buttons)    |
-| **Accent 3**           | Pale Sky Blue | `#DCE7F2` | Fresh, calming highlight (e.g. CTA hover) |
-| **Borders/Dividers**   | Mist          | `#E3E3E3` | Subtle separation                         |
-| **Error/Alert**        | Coral Red     | `#FF6B6B` | For form validation or alerts             |
+| Purpose               | Hex Code   | Description                            |
+|----------------------|------------|----------------------------------------|
+| **Primary Font**      | `#1E1E1E`  | Nearly black for strong readability    |
+| **Secondary Font**    | `#003300`  | Deep forest green                      |
+| **Main Background**   | `#e6f0dc`  | Soft pale green for calming base       |
+| **Content Background**| `#ffffff`  | White for clean content areas          |
+| **Accent 1**          | `#c1e899`  | Light green for highlights/buttons     |
+| **Accent 2**          | `#d4b483`  | Warm muted gold for emphasis           |
+| **Accent 3**          | `#7a9d54`  | Earthy olive green for icons/hover     |
+| **Borders/Dividers**  | `#ccd5ae`  | Subtle neutral for dividing elements   |
+| **Error/Alert**       | `#cc0000`  | Clear red for error states             |
 
-## Typography
+---
 
-| Element      | Font Family                              | Weight  | Style                     |
-| ------------ | ---------------------------------------- | ------- | ------------------------- |
-| **Headings** | `Playfair Display`, serif                | 700     | Elegant and readable      |
-| **Body**     | `Lato`, `Nunito`, or `Inter`, sans-serif | 400–500 | Clean, approachable       |
-| **Buttons**  | Same as body, bold                       | 600     | Ensure contrast & clarity |
+## 🧠 Typography
 
+| Element      | Font Family                                   | Font Weight | Style Description           |
+|--------------|------------------------------------------------|-------------|-----------------------------|
+| **Headings** | `"Segoe UI", "Helvetica Neue", Arial, sans-serif` | 600–700     | Uppercase or bolded, large  |
+| **Body**     | `"Georgia", "DejaVu Serif", serif`              | 400–500     | Clean, warm, and readable   |
+| **Buttons**  | `"Segoe UI", sans-serif`                        | 600         | Uppercase, bold, padded     |
 
-## Forms
+- Line-height: `1.5`
+- Letter-spacing: `normal` for body, `0.05em` for buttons
+- Heading sizes: `h1: 2.25rem`, `h2: 1.75rem`, `h3: 1.25rem`
 
-## Iconography
+---
 
-## Spacing
+## 🧭 Navigation Bar
 
-## UI Elements
+| Element         | Color      |
+|-----------------|------------|
+| **Background**  | `#003300`  |
+| **Font Color**  | `#ffffff`  |
+| **Active Link** | `#c1e899`  |
+| **Hover Color** | `#7a9d54`  |
 
-| **Element**             | **Property**      | **Value**                         |
-| ----------------------- | ----------------- | --------------------------------- |
-| **Body**                | Font Family       | `Lato`, `Nunito`, or `Inter`      |
-|                         | Font Color        | `#2E2E2E` (Charcoal)              |
-|                         | Background Color  | `#FAFAFA` (Porcelain)             |
-| **Headings**            | Font Family       | `Playfair Display`, serif         |
-|                         | Font Weight       | `700`                             |
-|                         | Font Color        | `#2E2E2E`                         |
-| **Buttons (Primary)**   | Font Weight       | `600`                             |
-|                         | Background Color  | `#F4C29D` (Warm Apricot)          |
-|                         | Font Color        | `#2E2E2E`                         |
-|                         | Border Radius     | `8px`                             |
-|                         | Hover BG Color    | `#DCE7F2` (Pale Sky Blue)         |
-| **Buttons (Secondary)** | Border            | `1px solid #A8CBB7` (Sage Green)  |
-|                         | Background Color  | `#FFFFFF`                         |
-|                         | Font Color        | `#2E2E2E`                         |
-| **Recipe Cards**        | Background Color  | `#FFFFFF` (Snow)                  |
-|                         | Border            | `1px solid #E3E3E3` (Mist)        |
-|                         | Box Shadow        | `0 2px 8px rgba(0,0,0,0.05)`      |
-|                         | Title Font        | `Playfair Display`                |
-|                         | Body Font         | `Lato` or `Nunito`                |
-|                         | Title Color       | `#2E2E2E`                         |
-|                         | Text Color        | `#5A5A5A` (Slate Gray)            |
-| **Navigation Bar**      | Background Color  | `#FAFAFA`                         |
-|                         | Font Color        | `#2E2E2E`                         |
-|                         | Active Link Color | `#A8CBB7` (Sage Green), underline |
-| **Forms / Inputs**      | Background Color  | `#FFFFFF`                         |
-|                         | Border            | `1px solid #E3E3E3`               |
-|                         | Focus Border      | `#A8CBB7`                         |
-|                         | Error Text Color  | `#FF6B6B` (Coral Red)             |
-| **Accent Colors**       | Sage Green        | `#A8CBB7`                         |
-|                         | Warm Apricot      | `#F4C29D`                         |
-|                         | Pale Sky Blue     | `#DCE7F2`                         |
+---
+## 📏 Design Guidelines
 
+- **Buttons**: Rounded corners (`border-radius: 6px`), use Accent 1 background with white text. On hover, swap to Accent 3.
+- **Recipe Cards**: Use white content background with subtle border or shadow. Titles in Secondary Font color, buttons in Accent 1.
+- **Focus States**: Use `2px solid #c1e899` for keyboard focus indicators.
+- **Links**: Use underline on hover, Accent 3 as hover color if inside content.
 
-## Accessibility
+---
+
+## 🔐 Accessibility
+
+- All color combinations tested for WCAG AA contrast.
+- Text size: `16px+` body, minimum `18px` for buttons and nav.
+- Use semantic HTML structure with landmarks (`<header>`, `<main>`, `<nav>`, `<footer>`).
+- Ensure all interactive elements have accessible labels and states.
