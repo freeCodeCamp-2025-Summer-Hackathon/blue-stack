@@ -6,8 +6,11 @@
 
 :root {
   --roulette-card-border-radius: 10px;
-  --primary-font-color: #2e2e2e;
-  --primary-background-color: #fafafa;
+  --primary-font-color: #1E1E1E;
+  --secondary-font-color: #003300;
+  --primary-background-color: #e6f0dc;
+  --accent-1: #c1e899;
+  --accent-3: #7a9d54;
 }
 
 html {
@@ -20,11 +23,13 @@ html {
 }
 
 #roulette > h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   color: var(--primary-font-color);
   text-align: center;
 }
+
+/* TODO: VVV @tsb will likely overwrite these button styles VVV */
 
 #roulette-button-container {
   margin: 10px auto;
@@ -33,13 +38,15 @@ html {
 
 #roulette-button {
   font-weight: 600;
-  font-family: "Lato", "Nunito", "Inter", sans-serif;
-  background-color: #f4c29d;
-  color: var(--primary-font-color);
-  border-radius: 8px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--accent-1);
+  color: white;
+  border-radius: 6px;
   padding: 5px;
+}
 
-  /* TODO: get guidance from @tsb for further button styling */
+#roulette-button:hover {
+  background-color: var(--accent-3);
 }
 
 #roulette-card-container {
@@ -121,16 +128,16 @@ html {
 }
 
 .card-header {
-  font-family: "Playfair Display", serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
-  color: var(--primary-font-color);
+  color: var(--secondary-font-color);
 }
 
 .card-description {
   position: relative;
-  font-family: "Lato", "Nunito", "Inter", sans-serif;
+  font-family: "Georgia", "DejaVu Serif", serif;
   font-weight: 400;
-  color: #5e5e5e;
+  color: var(--secondary-font-color);
   height: 3.6em;
   overflow: hidden;
 }
