@@ -12,3 +12,39 @@ header {
     text-align: center;
 }
 
+.navbar {
+    background-color: #559357;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+    
+}
+
+.nav-links li {
+    margin: 10px, 20px; 
+    padding: 20px; 
+    border: 2px whitesmoke; 
+    
+}
+
+.nav-links a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 2px;
+    
+}
+
+.nav-links a:hover {
+    background-color: #C1E899;
+}
