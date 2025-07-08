@@ -1,39 +1,39 @@
-// TODO: create cards from database if/when that's implemented
-// TODO: implement proper descriptions once C3ph1r4 has them written
+// TODO: change source of card data -- maybe to a central assets/images folder, database query (if/when we get there), or combination (esp. for images)
+// ? create card component for use on this page and others?
 const card1 = {
   name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/Candied-fire-bacon.webp",
+  image: "assets/Candied-fire-bacon.webp",
 };
 
 const card2 = {
   name: "Fusion Sticky Mango Rice",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/Fusion-Sticky-mango-rice.webp",
+  image: "assets/Fusion-Sticky-mango-rice.webp",
 };
 
 const card3 = {
   name: "Galangal",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/galangal.webp",
+  image: "assets/galangal.webp",
 };
 
 const card4 = {
   name: "Spicy Albondigas",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/Spicy-Albondigas.webp",
+  image: "assets/Spicy-Albondigas.webp",
 };
 
 const card5 = {
   name: "Sushi",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/Sushi.webp",
+  image: "assets/Sushi.webp",
 };
 
 const card6 = {
   name: "Tom Kha Gai",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "../recipe-page/recipes/assets/Tom-Kha-Gai.webp",
+  image: "assets/Tom-Kha-Gai.webp",
 };
 
 const cards = [card1, card2, card3, card4, card5, card6];
@@ -57,6 +57,7 @@ function createCards() {
           <div class="card-description">
             ${card.desc}
           </div>
+          <button class="roulette-card-recipe-button button" href="">View Recipe</button>
         </div>
       </div>
     `
@@ -70,7 +71,7 @@ function spin() {
   if (isSpinning) return;
   isSpinning = true;
 
-  const cardWidth = 260;
+  const cardWidth = 310; // width of card plus margins on each side
   let rouletteFade = document.querySelector("#roulette-fade");
 
   rouletteFade.style.backgroundColor = "var(--primary-background-color)";
