@@ -1,3 +1,5 @@
+# Style Guide
+
 ## 🎨 Color Palette
 
 | Purpose               | Hex Code   | Description                            |
@@ -38,6 +40,7 @@
 | **Hover Color** | `#7a9d54`  |
 
 ---
+
 ## 📏 Design Guidelines
 
 - **Buttons**: Rounded corners (`border-radius: 6px`), use Accent 1 background with white text. On hover, swap to Accent 3.
