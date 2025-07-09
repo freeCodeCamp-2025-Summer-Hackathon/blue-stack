@@ -13,10 +13,14 @@ header {
 }
 
 .navbar {
+    position: relative; 
     background-color: #559357;
     color: white;
     padding: 10px 0;
-    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white; 
     
 }
 
@@ -26,18 +30,21 @@ header {
     justify-content: center;
     margin: 10px;
     padding: 10px;
+    position: relative; 
 
     
 }
 
 .nav-links li {
-    margin: 10px, 20px; 
+    margin: 10px 20px; 
     padding: 20px; 
     border: 2px whitesmoke; 
     
 }
 
 .nav-links a {
+    position: relative;
+    display: inline-block; 
     color: white; 
     text-decoration: none;
     font-size: 18px;
@@ -46,5 +53,7 @@ header {
 }
 
 .nav-links a:hover {
-    background-color: #C1E899;
+    background: linear-gradient(45deg, #003300, #c1e899);
+  border-radius: 8px;
 }
+
