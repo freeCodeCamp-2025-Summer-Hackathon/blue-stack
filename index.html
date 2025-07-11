@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Roulette</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./roulette/roulette.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -16,8 +22,8 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="#recipes">Recipes</a></li>
-                <li><a href="#blog-news">Blog</a></li>
+                <li><a href="./recipe-page/recipe.html">Recipes</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#about">About Us</a></li>
             </ul>
             <form class="search-form">
@@ -45,20 +51,29 @@
                         <li><strong>Cook:</strong> 25 min</li>
                         <li><strong>Serves:</strong> 4</li>
                     </ul>
-                    <a href="#recipes" class="hero-button">View Full Recipe</a>
+                    <a href="./recipe-page/recipes/Tom-Kha-Gai.html" class="hero-button">View Full Recipe</a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
     <main>
         <section>
             <h2></h2>
         </section>
     </main>
+
+    <div id="roulette">
+        <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
+        <div id="roulette-button-container">
+            <button id="roulette-button" class="button" onclick="spin()">Spin</button>
+        </div>
+        <div id="roulette-card-container">
+            <div id="roulette-card-wrapper"></div>
+        </div>
+
+        <script src="./roulette/roulette.js"></script>
+    </div>
 </body>
 
 </html>

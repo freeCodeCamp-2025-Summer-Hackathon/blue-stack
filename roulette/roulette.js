@@ -3,37 +3,38 @@
 const card1 = {
   name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/Candied-fire-bacon.webp",
+  image: "./roulette/assets/Candied-fire-bacon.webp",
 };
 
 const card2 = {
   name: "Fusion Sticky Mango Rice",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/Fusion-Sticky-mango-rice.webp",
+  image: "./roulette/assets/Fusion-Sticky-mango-rice.webp",
+  page: "./recipe-page/recipes/Fusion-Sticky-Mango-Rice.html",
 };
 
 const card3 = {
   name: "Galangal",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/galangal.webp",
+  image: "./roulette/assets/galangal.webp",
 };
 
 const card4 = {
   name: "Spicy Albondigas",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/Spicy-Albondigas.webp",
+  image: "./roulette/assets/Spicy-Albondigas.webp",
 };
 
 const card5 = {
   name: "Sushi",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/Sushi.webp",
+  image: "./roulette/assets/Sushi.webp",
 };
 
 const card6 = {
   name: "Tom Kha Gai",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "assets/Tom-Kha-Gai.webp",
+  image: "./roulette/assets/Tom-Kha-Gai.webp",
 };
 
 const cards = [card1, card2, card3, card4, card5, card6];
