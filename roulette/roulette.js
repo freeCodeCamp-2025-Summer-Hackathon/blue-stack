@@ -4,6 +4,7 @@ const card1 = {
   name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Candied-fire-bacon.webp",
+  page: "",
 };
 
 const card2 = {
@@ -17,24 +18,28 @@ const card3 = {
   name: "Galangal",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/galangal.webp",
+  page: "",
 };
 
 const card4 = {
   name: "Spicy Albondigas",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Spicy-Albondigas.webp",
+  page: "",
 };
 
 const card5 = {
   name: "Sushi",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Sushi.webp",
+  page: "",
 };
 
 const card6 = {
   name: "Tom Kha Gai",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Tom-Kha-Gai.webp",
+  page: "",
 };
 
 const cards = [card1, card2, card3, card4, card5, card6];
@@ -58,7 +63,10 @@ function createCards() {
           <div class="card-description">
             ${card.desc}
           </div>
-          <button class="roulette-card-recipe-button button" href="">View Recipe</button>
+          ${card.page
+  ? `<a class="roulette-card-recipe-button button" href="${card.page}">View Recipe</a>`
+  : `<button class="roulette-card-recipe-button button" disabled>View Recipe</button>`}
+
         </div>
       </div>
     `
