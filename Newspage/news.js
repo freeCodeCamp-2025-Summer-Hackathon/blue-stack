@@ -4,7 +4,7 @@ const API_KEY = '95c35dc369f3427990fba8758a6a78f5';
 const grid = document.createElement('section');
 grid.className = 'card-grid';
 
-fetch(`https://newsapi.org/v2/everything?q=food&language=en&pageSize=8&apiKey=${API_KEY}`)
+fetch(`https://newsapi.org/v2/everything?q=food&language=en&pageSize=16&apiKey=${API_KEY}`)
   .then(res => res.json())
   .then(data => {
     data.articles.forEach(article => {
