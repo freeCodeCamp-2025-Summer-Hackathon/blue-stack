@@ -1,4 +1,9 @@
-* {
+@font-face {
+    font-family: 'Lexend';
+    src: url(fonts/Lexend-Regular.ttf);
+}
+
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -63,6 +68,23 @@ nav {
     text-decoration: underline;
 }
 
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border-radius: 18px;
+    background-color: #e6f0dc;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: 9px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
 
 .search-form input {
     padding: 6px 10px;

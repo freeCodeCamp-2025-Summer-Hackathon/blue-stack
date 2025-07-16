@@ -36,17 +36,25 @@ html {
 
 #roulette-button-container {
   margin: 10px auto;
-  text-align: center;
+  text-align: center
 }
 
-.button {
+.spin-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #c1e899;
+  font-family: "Lexend", "Segoe UI", sans-serif;
   font-weight: 600;
-  font-family: "Segoe UI", sans-serif;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
-  background-color: var(--accent-1);
-  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 2px solid #dcdcdc;
   border-radius: 6px;
-  border-color: var(--borders-dividers);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none; 
 }
 
 .button:hover {
