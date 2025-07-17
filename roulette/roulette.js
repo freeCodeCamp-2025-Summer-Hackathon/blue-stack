@@ -4,7 +4,7 @@ const card1 = {
   name: "Candied Fire Bacon",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Candied-fire-bacon.webp",
-  page: "",
+  page: "./recipe-page/recipes/Candied-Bacon.html",
 };
 
 const card2 = {
@@ -18,28 +18,28 @@ const card3 = {
   name: "Galangal",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/galangal.webp",
-  page: "",
+  page: "./recipe-page/recipes/Tom-Kha-Gai.html",
 };
 
 const card4 = {
   name: "Spicy Albondigas",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Spicy-Albondigas.webp",
-  page: "",
+  page: "./recipe-page/recipes/Spicy-Albondiga-Meatball-Soup.html",
 };
 
 const card5 = {
   name: "Sushi",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Sushi.webp",
-  page: "",
+  page: "./recipe-page/recipes/sushi-rolls.html",
 };
 
 const card6 = {
   name: "Tom Kha Gai",
   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
   image: "./roulette/assets/Tom-Kha-Gai.webp",
-  page: "",
+  page: "./recipe-page/recipes/Tom-Kha-Gai.html",
 };
 
 const cards = [card1, card2, card3, card4, card5, card6];
