@@ -1,0 +1,32 @@
+@use '../theme/variables' as *;
+
+.search {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: 'Lexend', sans-serif;
+  margin-left: 9px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid $borders-dividers;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+    border-color: $accent-3;
+    box-shadow: 0 0 3px $accent-3;
+  }
+}
