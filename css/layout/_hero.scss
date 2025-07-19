@@ -1,0 +1,79 @@
+@use '../theme/variables' as *;
+
+.hero-section {
+  background: $primary-background-color;
+  padding: 60px 15px;
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .hero-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    .hero-image {
+      flex: 1 1 50%;
+      min-width: 300px;
+
+      img {
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .hero-text {
+      flex: 1 1 50%;
+      max-width: 460px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 36px;
+        color: $secondary-font-color;
+        margin-bottom: 15px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .hero-meta {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        margin-bottom: 25px;
+        font-size: 14px;
+      }
+
+      .hero-button {
+        background: $accent-1;
+        color: $primary-font-color;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.3s;
+        width: fit-content;
+
+        &:hover {
+          background: $accent-3;
+          color: white;
+        }
+      }
+    }
+  }
+}

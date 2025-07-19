@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background-color: #e6f0dc;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("../../fonts/Lexend-Regular.ttf");
+}
+.hero-section {
+  background: #e6f0dc;
+  padding: 60px 15px;
+}
+.hero-section .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.hero-section .hero-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.hero-section .hero-card .hero-image {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+.hero-section .hero-card .hero-image img {
+  width: 100%;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.hero-section .hero-card .hero-text {
+  flex: 1 1 50%;
+  max-width: 460px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-section .hero-card .hero-text h2 {
+  font-size: 36px;
+  color: #003300;
+  margin-bottom: 15px;
+}
+.hero-section .hero-card .hero-text .hero-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.hero-section .hero-card .hero-text .hero-meta {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+.hero-section .hero-card .hero-text .hero-button {
+  background: #c1e899;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero-section .hero-card .hero-text .hero-button:hover {
+  background: #7a9d54;
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  height: 80px;
+}
+.navbar-container .logo-title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.navbar-container .logo-title img {
+  height: 80px;
+}
+.navbar-container nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar-container nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+.navbar-container nav .nav-links li {
+  list-style: none;
+}
+.navbar-container nav .nav-links a {
+  text-decoration: none;
+  color: #1e1e1e;
+  padding: 8px 12px;
+}
+.navbar-container nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+#roulette {
+  width: 100%;
+  padding: 20px;
+}
+#roulette #roulette-title {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #1e1e1e;
+  text-align: center;
+}
+#roulette #roulette-button-container {
+  margin: 10px auto;
+  text-align: center;
+}
+#roulette #roulette-button-container #roulette-button {
+  padding: 5px;
+}
+#roulette #roulette-card-container {
+  width: 100%;
+  height: 500px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#roulette #roulette-card-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 110%;
+  background: linear-gradient(to right, #e6f0dc, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, #e6f0dc 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+#roulette #roulette-fade {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: background-color 1s ease-in-out;
+  pointer-events: none;
+}
+#roulette #roulette-card-wrapper {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+#roulette .roulette-card {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  margin: 0 5px;
+}
+#roulette .roulette-card .card-image {
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#roulette .roulette-card .card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#roulette .roulette-card .card-info {
+  padding: 20px;
+}
+#roulette .roulette-card .card-info .card-header {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  color: #003300;
+}
+#roulette .roulette-card .card-info .card-header h3 {
+  font-size: 1.25rem;
+}
+#roulette .roulette-card .card-info .card-description {
+  position: relative;
+  font-family: "Georgia", "DejaVu Serif", serif;
+  font-weight: 400;
+  color: #003300;
+  height: 4.5em;
+  overflow: hidden;
+}
+#roulette .roulette-card .card-info .card-description::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255) 50%);
+}
+#roulette .roulette-card .card-info .roulette-card-recipe-button {
+  text-align: center;
+  display: block;
+  margin: 10 auto 0 auto;
+  padding: 5px;
+}
+
+.button,
+.login-btn,
+.signup-btn,
+.random-recipe-btn,
+.submit-recipe-btn {
+  font-family: "Lexend", "Segoe UI", Arial, sans-serif;
+  background-color: #c1e899;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 2px solid #dcdcdc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  outline: none;
+}
+.button:hover,
+.login-btn:hover,
+.signup-btn:hover,
+.random-recipe-btn:hover,
+.submit-recipe-btn:hover {
+  background-color: #7a9d54;
+  cursor: pointer;
+}
+.button:focus,
+.login-btn:focus,
+.signup-btn:focus,
+.random-recipe-btn:focus,
+.submit-recipe-btn:focus {
+  border: 2px solid #c1e899;
+}
+.button img,
+.login-btn img,
+.signup-btn img,
+.random-recipe-btn img,
+.submit-recipe-btn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.button a,
+.login-btn a,
+.signup-btn a,
+.random-recipe-btn a,
+.submit-recipe-btn a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+#news-container {
+  background-color: #e6f0dc;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news-card img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-card h3 {
+  font-size: 1.1rem;
+  padding: 10px 15px 5px;
+  color: #1e1e1e;
+}
+.news-card p {
+  font-size: 0.9rem;
+  padding: 0 15px;
+  color: #444;
+}
+.news-card span {
+  font-size: 0.8rem;
+  padding: 0 15px;
+  color: gray;
+}
+.news-card a {
+  margin: 10px 15px 0;
+  background: #c1e899;
+  color: #1e1e1e;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+  align-self: flex-start;
+}
+.news-card a:hover {
+  background: #7a9d54;
+  color: white;
+}
+
+.search {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding: 9px;
+  border-radius: 18px;
+  background-color: #ffffff;
+}
+
+.search-input {
+  font-size: 16px;
+  font-family: "Lexend", sans-serif;
+  margin-left: 9px;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccd5ae;
+  border-radius: 5px;
+}
+.search-form input:focus {
+  outline: none;
+  border-color: #7a9d54;
+  box-shadow: 0 0 3px #7a9d54;
+}/*# sourceMappingURL=main.css.map */
