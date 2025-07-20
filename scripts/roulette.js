@@ -1,48 +1,39 @@
 // TODO: change source of card data -- maybe to a central assets/images folder, database query (if/when we get there), or combination (esp. for images)
 // ? create card component for use on this page and others?
-const card1 = {
-  name: "Candied Fire Bacon",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/Candied-fire-bacon.webp",
-  page: "./recipe-page/recipes/Candied-Bacon.html",
-};
 
-const card2 = {
-  name: "Fusion Sticky Mango Rice",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/Fusion-Sticky-mango-rice.webp",
-  page: "./recipe-page/recipes/Fusion-Sticky-Mango-Rice.html",
-};
+const cards = [
+  {
+    name: "Candied Fire Bacon",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+    image: "Candied-fire-bacon.webp",
+    page: "./recipe-page/recipes/Candied-Bacon.html",
+  },
+  {
+    name: "Fusion Sticky Mango Rice",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+    image: "Fusion-Sticky-mango-rice.webp",
+    page: "./recipe-page/recipes/Fusion-Sticky-Mango-Rice.html",
+  },
+  {
+    name: "Galangal",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+    image: "galangal.webp",
+    page: "./recipe-page/recipes/Tom-Kha-Gai.html",
+  },
+  {
+    name: "Spicy Albondigas",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+    image: "Spicy-Albondigas.webp",
+    page: "./recipe-page/recipes/Spicy-Albondiga-Meatball-Soup.html",
+  },
+  {
+    name: "Tom Kha Gai",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
+    image: "Tom-Kha-Gai.webp",
+    page: "./recipe-page/recipes/Tom-Kha-Gai.html",
+  },
+];
 
-const card3 = {
-  name: "Galangal",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/galangal.webp",
-  page: "./recipe-page/recipes/Tom-Kha-Gai.html",
-};
-
-const card4 = {
-  name: "Spicy Albondigas",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/Spicy-Albondigas.webp",
-  page: "./recipe-page/recipes/Spicy-Albondiga-Meatball-Soup.html",
-};
-
-const card5 = {
-  name: "Sushi",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/Sushi.webp",
-  page: "./recipe-page/recipes/sushi-rolls.html",
-};
-
-const card6 = {
-  name: "Tom Kha Gai",
-  desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus vulputate diam, finibus interdum odio volutpat ut. Sed ultrices ex sed augue sodales viverra. In faucibus egestas dignissim.",
-  image: "./roulette/assets/Tom-Kha-Gai.webp",
-  page: "./recipe-page/recipes/Tom-Kha-Gai.html",
-};
-
-const cards = [card1, card2, card3, card4, card5, card6];
 const wrapper = document.querySelector("#roulette-card-wrapper");
 let isSpinning = false;
 
@@ -54,7 +45,9 @@ function createCards() {
       (card, i) => `
       <div class="roulette-card" id="card-${i}">
         <div class="card-image">
-          <img src="${card.image}" alt="Recipe Image for ${card.name}" />
+          <img src="images/recipes/${card.image}" alt="Recipe Image for ${
+        card.name
+      }" />
         </div>
         <div class="card-info">
           <div class="card-header">
@@ -63,9 +56,11 @@ function createCards() {
           <div class="card-description">
             ${card.desc}
           </div>
-          ${card.page
-  ? `<a class="roulette-card-recipe-button button" href="${card.page}">View Recipe</a>`
-  : `<button class="roulette-card-recipe-button button" disabled>View Recipe</button>`}
+          ${
+            card.page
+              ? `<a class="roulette-card-recipe-button button" href="${card.page}">View Recipe</a>`
+              : `<button class="roulette-card-recipe-button button" disabled>View Recipe</button>`
+          }
 
         </div>
       </div>
@@ -83,10 +78,10 @@ function spin() {
   const cardWidth = 310; // width of card plus margins on each side
   let rouletteFade = document.querySelector("#roulette-fade");
 
-  rouletteFade.style.backgroundColor = "var(--primary-background-color)";
+  rouletteFade.style.opacity = "1";
 
   setTimeout(() => {
-    rouletteFade.style.backgroundColor = "rgba(255, 255, 255, 0)";
+    rouletteFade.style.opacity = "0";
 
     wrapper.style.transition = "none";
     wrapper.style.transform = `translateX(0px)`;
