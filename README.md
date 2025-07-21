@@ -119,7 +119,31 @@ Kidnapper: #E6F0DC
 
 
 ## Development
-
+<ul>
+ Closed pull requests
+  <li>22:Shy-away: Fix:unbreak links, reconnect styles</li>
+  <li>21:QWeDev: :feat: Move existing VSS to SMACSS</li>
+  <li>20:Shy-away: fix:reorganize files, add .gitignore</li>
+  <li>19:Slaterfr: Started working on the new recipes section</li>
+  <li>18:Brandimiller: Added navbar to all other pages and linked the roulette pages to their recipes</li>
+  <li>17:Slaterfr: Feat:newspage with dynamic food news</li>
+  <li>16:Brandi miller28: Added about and blog and home and linked to navbar</li>
+  <li>14:Tsb0216: Feat/buttons</li>
+  <li>13:BackusA920: Recipe page feature</li>
+  <li>12:Brandimiller28: Added a little more style</li>
+  <li>11:Shy-away: Feat/roulette</li>
+  <li>10:Brandimiller28: Created initial navbar</li>
+  <li>9:Shy-away: Update style guide</li>
+  <li>8:Shy-away: Feat/roulette</li>
+  <li>7:BackusA920: Add recipe page files and structure</li>
+  <li>6:QWeDev: docs: Add style guide</li>
+  <li>5:Brandimiller28: Updated Readme</li>
+  <li>4:QweDev: Docs/readme update 7/2/5</li>
+  <li>3:QweDev: docs: Add initial structure and format</li>
+  <li>2:BackusA920: Aprils intro added to README </li>
+  <li>1:Shy-away: text added to readme </li>
+ </ul> 
+  
 ### Workflow
 7/2/25
 <ul> 
