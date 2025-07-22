@@ -33,6 +33,10 @@ body {
   text-align: left;
 }
 
+.footer-title {
+  text-decoration: none;
+}
+
 .footer h3 {
   color: #1e1e1e;
   font: normal 24px "Arial";
@@ -48,7 +52,7 @@ body {
 /* logos */
 .footer-logo {
   height: 50px;
-  margin: 0px 0px -15px;
+  margin: 0px 0px -16px -10px;
 }
 
 .fcc-logo {
