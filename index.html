@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Roulette</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="./roulette/roulette.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,17 +66,16 @@
         </section>
     </main>
 
-    <div id="roulette">
-        <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
-        <div id="roulette-button-container">
-            <button id="roulette-button" class="button" onclick="spin()">Spin</button>
-        </div>
-        <div id="roulette-card-container">
-            <div id="roulette-card-wrapper"></div>
-        </div>
+        <div id="roulette">
+            <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
+            <div id="roulette-button-container">
+                <button id="roulette-button" class="button">Spin</button>
+            </div>
+            <div id="roulette-card-container">
+                <div id="roulette-card-wrapper"></div>
+            </div>
 
-        <script src="./scripts/roulette.js"></script>
-    </div>
-</body>
-
+            <script src="./scripts/roulette.js" type="module"></script>
+        </div>
+    </body>
 </html>
