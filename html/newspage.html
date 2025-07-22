@@ -15,27 +15,32 @@
       </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="./recipe.html">Recipes</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./about.html">About Us</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/recipe-page/recipe.html">Recipes</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="#about">About Us</a></li>
         </ul>
         <form class="search-form">
         </form>
       </nav>
     </div>
   </header>
-
+  
   <main>
-    <section class="news-section">
-      <h2>See the latest Food News</h2>
-      <div id="news-container"></div>
+    <section id="news-section">
+      <h2>Latest Food News</h2>
+      <div id="news-container" class="news-grid">
+      </div>
     </section>
-    <section class="new-recipes-section">
-      <h2>Recently added recipes</h2>
-      <div id="recipes-container"></div>
-    </section>
+    
+    <section id="recipes-section">
+      <h2>Explore New Recipes</h2>
+    <div id="recipes-container" class="recipe-grid">
+    </div>
+  </section>
   </main>
 
+<<<<<<< HEAD:html/newspage.html
   <footer>
     <p>&copy; 2025 Meal of Fortune Hackathon Project</p>
   </footer>
@@ -44,6 +49,10 @@
   <script src="../scripts/new_recipes.js"></script>
 
   <!-- TODO: Add footer -->
+=======
+  <script src="news.js"></script>
+  <script src="new_recipes.js"></script>
+>>>>>>> 40b1772 (Fixed new recipes section and issue with the APIs images):Newspage/index.html
 </body>
 </html>
 
