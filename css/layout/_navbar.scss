@@ -1,0 +1,45 @@
+@use '../theme/variables' as *;
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  height: 80px;
+
+  .logo-title {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    img {
+      height: 80px;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+
+      li {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: $primary-font-color;
+        padding: 8px 12px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@use '../theme/variables' as *;
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+#news-container {
+  background-color: $primary-background-color;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.news-card {
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    padding: 10px 15px 5px;
+    color: $primary-font-color;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding: 0 15px;
+    color: #444;
+  }
+
+  span {
+    font-size: 0.8rem;
+    padding: 0 15px;
+    color: gray;
+  }
+
+  a {
+    margin: 10px 15px 0;
+    background: $accent-1;
+    color: $primary-font-color;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    align-self: flex-start;
+
+    &:hover {
+      background: $accent-3;
+      color: white;
+    }
+  }
+}

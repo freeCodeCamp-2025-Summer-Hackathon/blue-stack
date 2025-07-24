@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Lexend';
+    src: url(fonts/Lexend-Regular.ttf);
+}
+body {
+    background-color: #e6f0dc;
+    font-family: Arial, sans-serif;
+}
+
+.login-btn, .signup-btn, .submit-recipe-btn {
+    font-family: 'Lexend', 'Segoe UI', Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    border: 2px solid #dcdcdc;
+    font-weight: 600, bold;
+    display: flex;
+    align-items: center;
+    background-color: #c1e899;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    
+    img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.login-btn:hover, .signup-btn:hover, .random-recipe-btn:hover, .submit-recipe-btn:hover {
+    background-color: #7a9d54;
+    cursor: pointer;
+}
+
+.login-btn:focus, .signup-btn:focus, .random-recipe-btn:focus, .submit-recipe-btn:focus {
+    border: 2px solid #c1e899;
+}
+
+.random-recipe-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #c1e899;
+    font-family: "Lexend", "Segoe UI", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: 2px solid #dcdcdc;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    outline: none; 
+
+    img {
+        width: 40px;
+        height: 40px;
+  }
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    border-radius: 18px;
+    background-color: #ffffff;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    margin-left: 9px;
+    outline: none;
+    border: none;
+    background: transparent;
+}

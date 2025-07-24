@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+html {
+  background-color: var(--primary-background-color);
+}
+
+:root {
+  --roulette-card-border-radius: 10px;
+  --primary-font-color: #1e1e1e;
+  --secondary-font-color: #003300;
+  --primary-background-color: #e6f0dc;
+  --accent-1: #c1e899;
+  --accent-3: #7a9d54;
+  --borders-dividers: #ccd5ae;
+}
+
+#roulette {
+  width: 100%;
+  padding: 20px;
+}
+
+#roulette-title {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--primary-font-color);
+  text-align: center;
+}
+
+/* TODO: VVV @tsb may overwrite these button styles VVV */
+
+#roulette-button-container {
+  margin: 10px auto;
+  text-align: center
+}
+
+.spin-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #c1e899;
+  font-family: "Lexend", "Segoe UI", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 2px solid #dcdcdc;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  outline: none; 
+}
+
+.button:hover {
+  background-color: var(--accent-3);
+}
+
+#roulette-button {
+  padding: 5px;
+}
+
+#roulette-card-container {
+  width: 100%;
+  height: 500px;
+  padding-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+#roulette-card-container::before {
+  content: "";
+  text-align: right;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 110%;
+  background: linear-gradient(
+    to right,
+    var(--primary-background-color),
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0) 70%,
+    var(--primary-background-color) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+#roulette-fade {
+  /* roulette fade-in and fade-out */
+  content: "";
+  text-align: right;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: background-color 1s ease-in-out;
+  pointer-events: none;
+}
+
+#roulette-card-wrapper {
+  display: flex;
+  position: absolute;
+  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* initially center the roulette */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.roulette-card {
+  background-color: #ffffff;
+  border: #e3e3e3 1px solid;
+  transition: transform 0.5s ease-in-out;
+  border-radius: var(--roulette-card-border-radius);
+  width: 300px;
+  height: 400px;
+  margin: 0 5px;
+}
+
+.card-image {
+  height: 200px;
+  overflow: hidden;
+  border-top-left-radius: var(--roulette-card-border-radius);
+  border-top-right-radius: var(--roulette-card-border-radius);
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: var(--roulette-card-border-radius);
+  border-top-right-radius: var(--roulette-card-border-radius);
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-header {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  color: var(--secondary-font-color);
+}
+
+.card-header > h3 {
+  font-size: 1.25rem;
+}
+
+.card-description {
+  position: relative;
+  font-family: "Georgia", "DejaVu Serif", serif;
+  font-weight: 400;
+  color: var(--secondary-font-color);
+  height: 4.5em;
+  overflow: hidden;
+}
+
+/* Fade effect source: https://css-tricks.com/line-clampin/ */
+.card-description::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.5em;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 50%
+  );
+}
+
+.roulette-card-recipe-button {
+  text-align: center;
+  display: block;
+  margin: 10 auto 0 auto;
+  padding: 5px;
+}

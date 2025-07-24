@@ -1,0 +1,129 @@
+@use '../theme/variables' as *;
+
+.footer{
+	background: $footer-background;
+	box-sizing: border-box;
+	width: 100%;	
+	font: bold 16px sans-serif;
+	padding: 20px 50px;
+  	color: $footer-text;
+}
+
+.footer .footer-left,
+.footer .footer-right{
+	display: inline-block;
+	vertical-align: top;
+  
+}
+
+.footer .footer-left{
+	width: 40%;
+  	text-align:left;
+}
+
+.footer-title{
+	text-decoration: none;
+}
+
+.footer h3{
+	color:  $primary-font-color;
+	font: normal 24px 'Arial';
+	margin: 0;
+  	background-color: $primary-background-color;
+  	border-radius: 4px;
+  	padding: 7px;
+  	max-width:fit-content;
+  	display: inline;
+}
+
+/* logos */
+  .footer-logo {
+    height: 50px;
+    margin: 0px 0px -16px -10px;
+  }
+
+  .fcc-logo {
+    height: 10px;
+    padding: 0px 5px 0px;
+  }
+
+/* Footer links */
+
+.footer .footer-links{
+	margin: 5px 0 0px;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+ 	font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+  }
+
+
+.footer .footer-links a:before {
+  	content: "|";
+  	font-weight:400;
+  	font-size: 20px;
+  	left: 0;
+  	display: inline-block;
+  	padding-right: 5px;
+}
+
+.footer .footer-links .link-1:before {
+  	content: none;
+}
+
+/* Footer Right */
+
+.footer .footer-right{
+	width: 50%;
+}
+
+.footer .footer-description{
+	line-height: 20px;
+	color:  $footer-text;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+/* uncomment alongside social html if attaching social media links */
+// .footer .footer-icons a{
+// 	display: inline-block;
+// 	width: 35px;
+// 	height: 35px;
+// 	cursor: pointer;
+// 	background-color:  #33383b;
+// 	border-radius: 2px;
+
+// 	font-size: 20px;
+// 	color: #ffffff;
+// 	text-align: center;
+// 	line-height: 35px;
+
+// 	margin-right: 3px;
+// 	margin-bottom: 5px;
+// }
+
+/* Responsive footer queries*/
+
+@media (max-width: 880px) {
+
+	.footer{
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-right{
+
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+
+}

@@ -1,0 +1,139 @@
+@use '../theme/variables' as *;
+
+#roulette {
+  width: 100%;
+  padding: 20px;
+
+  #roulette-title {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: $primary-font-color;
+    text-align: center;
+  }
+
+  #roulette-button-container {
+    margin: 10px auto;
+
+    #roulette-button {
+      padding: 5px;
+      margin: auto;
+    }
+  }
+
+  #roulette-card-container {
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 110%;
+      background: linear-gradient(
+        to right,
+        $primary-background-color,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0) 70%,
+        $primary-background-color 100%
+      );
+      z-index: 1;
+      pointer-events: none;
+    }
+  }
+
+  #roulette-fade {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-background-color;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+  }
+
+  #roulette-card-wrapper {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .roulette-card {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    transition: transform 0.5s ease-in-out;
+    border-radius: $roulette-card-border-radius;
+    width: 300px;
+    height: 400px;
+    margin: 0 5px;
+
+    .card-image {
+      height: 200px;
+      overflow: hidden;
+      border-top-left-radius: $roulette-card-border-radius;
+      border-top-right-radius: $roulette-card-border-radius;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: $roulette-card-border-radius;
+        border-top-right-radius: $roulette-card-border-radius;
+      }
+    }
+
+    .card-info {
+      padding: 20px;
+
+      .card-header {
+        font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        font-weight: 600;
+        color: $secondary-font-color;
+
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+
+      .card-description {
+        position: relative;
+        font-family: "Georgia", "DejaVu Serif", serif;
+        font-weight: 400;
+        color: $secondary-font-color;
+        height: 3.6em;
+        overflow: hidden;
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 70%;
+          height: 1.3em;
+          background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 1) 50%
+          );
+        }
+      }
+
+      .roulette-card-recipe-button {
+        text-align: center;
+        display: block;
+        margin: 10 auto 0 auto;
+        padding: 5px;
+      }
+    }
+  }
+}

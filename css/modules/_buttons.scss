@@ -1,0 +1,41 @@
+@use '../theme/variables' as *;
+
+.button,
+.login-btn,
+.signup-btn,
+.random-recipe-btn,
+.submit-recipe-btn {
+  font-family: 'Lexend', 'Segoe UI', Arial, sans-serif;
+  background-color: $accent-1;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 2px solid #dcdcdc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  outline: none;
+
+  &:hover {
+    background-color: $accent-3;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: 2px solid $accent-1;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
