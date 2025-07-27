@@ -89,6 +89,7 @@ body {
 /* Footer Right */
 .footer .footer-right {
   width: 50%;
+  margin-top: 50px;
 }
 
 .footer .footer-description {
@@ -109,7 +110,8 @@ body {
   .footer .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
