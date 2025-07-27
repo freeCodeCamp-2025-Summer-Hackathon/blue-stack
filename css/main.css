@@ -280,6 +280,10 @@ body {
   height: 400px;
   margin: 0 5px;
 }
+#roulette .roulette-card a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
 #roulette .roulette-card .card-image {
   height: 200px;
   overflow: hidden;
