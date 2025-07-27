@@ -17,7 +17,6 @@ function createCards() {
 createCards();
 
 function spin() {
-    alert("test")
     if (isSpinning) return;
     isSpinning = true;
 
