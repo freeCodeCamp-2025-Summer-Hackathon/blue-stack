@@ -1,0 +1,58 @@
+@use '../theme/variables' as *;
+
+.recipe-page {
+    background-color: $primary-background-color;
+    color: $primary-font-color;
+    font-family: $base-font-family;
+    line-height: 1.6;
+
+    main {
+        h1 {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: $secondary-font-color;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            color: $accent-3;
+            border-bottom: 2px solid $borders-dividers;
+            padding-bottom: 0.3rem;
+        }
+
+        main img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: $roulette-card-border-radius;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul,
+        ol {
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+
+            li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: $accent-1;
+            text-decoration: none;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
