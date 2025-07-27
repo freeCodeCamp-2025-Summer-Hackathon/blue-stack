@@ -6,29 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Roulette</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="./roulette/roulette.css" />
 </head>
 
 <body>
     <div class="navbar-container">
         <div class="logo-title">
-            <img src="/meal-of-fortune-logo.png" alt="Logo" />
+            <img src="./images/meal-of-fortune-logo.png" alt="Logo" />
             <h1>Meal of Fortune</h1>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./recipe-page/recipe.html">Recipes</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/recipe.html">Recipes</a></li>
+                <li><a href="./html/blog.html">Blog</a></li>
+                <li><a href="./html/about.html">About Us</a></li>
             </ul>
     <form action="">
         <div class="search">
-            <img src="icons/search.svg" alt="search"  />
+            <img src="images/icons/search.svg" alt="search"  />
             <input class="search-input" type="search" placeholder="Search...">
         </div>
     </form>
@@ -39,7 +35,7 @@
         <div class="container">
             <div class="hero-card">
                 <div class="hero-image">
-                    <img src="./soup-with-broccoli-tomatoes-mushrooms-greens.jpg" alt="Featured Recipe">
+                    <img src="./images/recipes/Tom-Kha-Gai.webp" alt="Featured Recipe">
                 </div>
                 <div class="hero-text">
                     <h2>Tom Kha Gai Soup</h2>
@@ -54,7 +50,7 @@
                         <li><strong>Cook:</strong> 25 min</li>
                         <li><strong>Serves:</strong> 4</li>
                     </ul>
-                    <a href="./recipe-page/recipes/Tom-Kha-Gai.html" class="hero-button">View Full Recipe</a>
+                    <a href="./html/recipes/Tom-Kha-Gai.html" class="hero-button">View Full Recipe</a>
                 </div>
             </div>
         </div>
@@ -65,17 +61,46 @@
             <h2></h2>
         </section>
     </main>
-
-        <div id="roulette">
-            <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
-            <div id="roulette-button-container">
-                <button id="roulette-button" class="button">Spin</button>
-            </div>
-            <div id="roulette-card-container">
-                <div id="roulette-card-wrapper"></div>
-            </div>
-
-            <script src="./scripts/roulette.js" type="module"></script>
+  
+    <div id="roulette">
+        <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
+        <div id="roulette-button-container">
+            <button id="roulette-button" class="button" onclick="spin()">Spin</button>
         </div>
-    </body>
+        <div id="roulette-card-container">
+            <div id="roulette-card-wrapper"></div>
+        </div>
+
+        <script src="./scripts/roulette.js"></script>
+    </div>
+     
+        <footer class="footer">
+			<div class="footer-left">
+                <a class="footer-title" href="index.html"><h3 ><img class="footer-logo" src="./images/meal-of-fortune-logo.png" alt="Logo"/>Meal of Fortune</h3></a>
+				<p class="footer-links">
+					<a class="link-1" href="index.html">Home</a>
+					<a class="footer-link" href="./recipe-page/recipe.html" >Recipes</a>
+					<a class="footer-link" href="./html/blog.html">Blog</a>
+					<a class="footer-link" href="./html/newspage.html">News</a>
+					<a class="footer-link" href="./html/about.html"> About</a>
+					<a class="footer-link" href="#Contact">Contact Us</a>
+                    <a class="footer-link" href="https://www.freecodecamp.org/"><img class="fcc-logo" src="images/fcc_secondary_small.svg" alt="freeCodeCamp Logo">freeCodeCamp</a>
+				</p>
+				<!-- <p class="footer-company-name">Team Blue-Stack 2025 &copy;&trade;&reg;</p> -->
+			</div>
+			<div class="footer-right">
+				<p class="footer-description">					
+                Created by Team Blue-Stack as part of <a href="https://www.freecodecamp.org/">freeCodeCamp's</a> first Hackathon
+                </p>
+				<!-- <div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+				</div> -->
+			</div>            
+		</footer>
+</body>
+
+
 </html>
