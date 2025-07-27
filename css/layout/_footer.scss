@@ -47,7 +47,6 @@
   }
 
 /* Footer links */
-
 .footer .footer-links{
 	margin: 5px 0 0px;
 }
@@ -59,7 +58,6 @@
 	text-decoration: none;
 	color:  inherit;
   }
-
 
 .footer .footer-links a:before {
   	content: "|";
@@ -75,7 +73,6 @@
 }
 
 /* Footer Right */
-
 .footer .footer-right{
 	width: 50%;
 	margin-top: 50px;
@@ -109,22 +106,17 @@
 // }
 
 /* Responsive footer queries*/
-
 @media (max-width: 880px) {
-
 	.footer{
 		font: bold 14px sans-serif;
 	}
 
 	.footer .footer-left,
 	.footer .footer-right{
-
 		display: block;
 		width: 100%;
 		margin-top: 10px;
 		margin-bottom: 10px;
 		text-align: center;
 	}
-
-
 }
