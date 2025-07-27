@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Food News</title>
-  <link rel="stylesheet" href="../../css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
   <header>
@@ -29,16 +29,19 @@
         </nav>
     </div>
   </header>
-
+  
   <main>
-    <section class="news-section">
-      <h2>See the latest Food News</h2>
-      <div id="news-container"></div>
+    <section id="news-section">
+      <h2>Latest Food News</h2>
+      <div id="news-container" class="news-grid">
+      </div>
     </section>
-    <section class="new-recipes-section">
-      <h2>Recently added recipes</h2>
-      <div id="recipes-container"></div>
-    </section>
+    
+    <section id="recipes-section">
+      <h2>Explore New Recipes</h2>
+    <div id="recipes-container" class="card-grid">
+    </div>
+  </section>
   </main>
 
   <!-- <footer>
