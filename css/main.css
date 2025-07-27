@@ -70,7 +70,7 @@ body {
   line-height: 1.8;
   font-weight: 400;
   text-decoration: none;
-  color: inherit;
+  color: #ece2b1;
 }
 
 .footer .footer-links a:before {
@@ -383,6 +383,10 @@ body {
 .submit-recipe-btn a {
   text-decoration: none;
   color: #000000;
+}
+
+.random-recipe-btn {
+  margin: auto;
 }
 
 .card-grid {

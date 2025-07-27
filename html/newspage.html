@@ -9,19 +9,24 @@
 <body>
   <header>
     <div class="navbar-container">
-      <div class="logo-title">
-        <img src="../images/meal-of-fortune-logo.png" alt="Logo" />
-        <h1>Meal of Fortune</h1>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="./recipe.html">Recipes</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./about.html">About Us</a></li>
-        </ul>
-        <form class="search-form">
-        </form>
-      </nav>
+        <div class="logo-title">
+            <img src="../images/meal-of-fortune-logo.png" alt="Logo" />
+            <h1>Meal of Fortune</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./recipe.html">Recipes</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+    <form action="">
+        <div class="search">
+            <img src="../images/icons/search.svg" alt="search"  />
+            <input class="search-input" type="search" placeholder="Search...">
+        </div>
+    </form>
+        </nav>
     </div>
   </header>
 
@@ -36,14 +41,39 @@
     </section>
   </main>
 
-  <footer>
+  <!-- <footer>
     <p>&copy; 2025 Meal of Fortune Hackathon Project</p>
-  </footer>
+  </footer> -->
 
   <script src="../scripts/news.js"></script>
   <script src="../scripts/new_recipes.js"></script>
 
-  <!-- TODO: Add footer -->
+  <footer class="footer">
+    <div class="footer-left">
+              <a class="footer-title" href="../index.html"><h3 ><img class="footer-logo" src="../images/meal-of-fortune-logo.png" alt="Logo"/>Meal of Fortune</h3></a>
+      <p class="footer-links">
+        <a class="link-1" href="../index.html">Home</a>
+        <a class="footer-link" href="./recipe.html" >Recipes</a>
+        <a class="footer-link" href="./blog.html">Blog</a>
+        <a class="footer-link" href="./newspage.html">News</a>
+        <a class="footer-link" href="./about.html"> About</a>
+        <a class="footer-link" href="#Contact">Contact Us</a>
+                  <a class="footer-link" href="https://www.freecodecamp.org/"><img class="fcc-logo" src="../images/fcc_secondary_small.svg" alt="freeCodeCamp Logo">freeCodeCamp</a>
+      </p>
+      <!-- <p class="footer-company-name">Team Blue-Stack 2025 &copy;&trade;&reg;</p> -->
+    </div>
+    <div class="footer-right">
+      <p class="footer-description">					
+              Created by Team Blue-Stack as part of <a href="https://www.freecodecamp.org/">freeCodeCamp's</a> first Hackathon
+              </p>
+      <!-- <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div> -->
+    </div>            
+  </footer>
 </body>
 </html>
 
