@@ -23,6 +23,7 @@ kitchen while fostering a vibrant community of food lovers.
 
 ### Key Features
 
+
 **Submit Recipes**: Share your favorite meals by uploading recipes with ingredients
 and step-by-step instructions.
 
@@ -115,12 +116,30 @@ Deep Fir: #003300
 Fern Green: #55883B
 Yellow Green: #C1E899 
 Kidnapper: #E6F0DC 
+Cod Grey: #1E1E1E
+Spring Green: #CLE899 
+Asparagus: #7A9D54 
+Green Mist: #ccd5ae
+Beauty Bush: #ECB2B1
+White: #FFFFFF
+Gray: #808080
+Mine Shaft: #333333
+
+
+
 
 
 
 ## Development
 <ul>
  Closed pull requests
+  <li>29:Shy-away: Fix, Navs,footers,recipe styles, etc</li>
+  <li>28:Slaterfr: Feature/Newspage</li>
+  <li>27:Shy-away: Refactor lots of file paths</lii>
+  <li>26:Brandimiller28: Added links to nav bar</li>
+  <li>25:TranB3: Origin/footer finished</li>
+  <li>24:Shy-away: Fix index.html paths,font link</li>
+  <li>23:BackusA920: Recipe page feature</li>
   <li>22:Shy-away: Fix:unbreak links, reconnect styles</li>
   <li>21:QWeDev: :feat: Move existing VSS to SMACSS</li>
   <li>20:Shy-away: fix:reorganize files, add .gitignore</li>
@@ -144,24 +163,9 @@ Kidnapper: #E6F0DC
   <li>1:Shy-away: text added to readme </li>
  </ul> 
   
-### Workflow
-7/2/25
-<ul> 
-  <li> Chessboard working with C3ph1r4 on recipe cards- Chessboard making cards C3ph1r4 making recipes and doing styling for recipe page/cards </li> 
-  <li> Bilbo- has done work on the footer layout </li>
-  <li> Brandi- has added nav bar and worked on styling for it </li>
-  <li> Tsb- has worked on adding buttons and styling for buttons  </li>
-  <li> QWeDev- has worked on pull requests, notes, and comments </li>
-  <li> Brandy- has worked on home page </li>
-  <li> Slater- has worked on the news page template </li>
-  <ul>
-
-
-
 ### Codebase Structure
+Distributed
 
 ### Deployment
-
-## Contact
 
 [def]: https://i.ibb.co/Hf4wDchY/image.png
