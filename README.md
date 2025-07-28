@@ -167,5 +167,6 @@ Mine Shaft: #333333
 Distributed
 
 ### Deployment
+Self hosted
 
 [def]: https://i.ibb.co/Hf4wDchY/image.png
