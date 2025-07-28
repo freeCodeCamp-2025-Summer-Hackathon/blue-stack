@@ -89,6 +89,7 @@ body {
 /* Footer Right */
 .footer .footer-right {
   width: 50%;
+  margin-top: 50px;
 }
 
 .footer .footer-description {
@@ -96,7 +97,6 @@ body {
   color: #ece2b1;
   font-size: 13px;
   font-weight: normal;
-  margin: 0;
 }
 
 /* uncomment alongside social html if attaching social media links */
@@ -109,7 +109,8 @@ body {
   .footer .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }

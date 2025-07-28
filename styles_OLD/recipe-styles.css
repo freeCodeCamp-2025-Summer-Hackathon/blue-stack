@@ -15,7 +15,7 @@
   margin-bottom: 1rem;
 }
 
-.main-recipe-page p {
+.main-recipe-page > main p {
   /* font-family: "Georgia", "DejaVu Serif", serif; */
   font-size: 1rem;
   /* line-height: 1.6; */

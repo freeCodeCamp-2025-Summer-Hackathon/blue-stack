@@ -13,7 +13,6 @@
 .footer .footer-right{
 	display: inline-block;
 	vertical-align: top;
-  
 }
 
 .footer .footer-left{
@@ -48,7 +47,6 @@
   }
 
 /* Footer links */
-
 .footer .footer-links{
 	margin: 5px 0 0px;
 }
@@ -60,7 +58,6 @@
 	text-decoration: none;
 	color: $footer-text;
   }
-
 
 .footer .footer-links a:before {
   	content: "|";
@@ -76,9 +73,9 @@
 }
 
 /* Footer Right */
-
 .footer .footer-right{
 	width: 50%;
+	margin-top: 50px;
 }
 
 .footer .footer-description{
@@ -86,7 +83,6 @@
 	color:  $footer-text;
 	font-size: 13px;
 	font-weight: normal;
-	margin: 0;
 }
 
 
@@ -109,21 +105,17 @@
 // }
 
 /* Responsive footer queries*/
-
 @media (max-width: 880px) {
-
 	.footer{
 		font: bold 14px sans-serif;
 	}
 
 	.footer .footer-left,
 	.footer .footer-right{
-
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		text-align: center;
 	}
-
-
 }
