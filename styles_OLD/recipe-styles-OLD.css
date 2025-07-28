@@ -1,0 +1,210 @@
+/* These styles are C3ph1r4's old styles
+preserved so that I (chessbored) can quickly
+fix up the styling in a new vanilla CSS file because
+I don't know how QWeDev set up his SASS partials. :P
+
+This file is only for reference. */
+
+/*recipe index page*/
+.main-recipe-page {
+  background-color: #ffffff;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-recipe-page h1 {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center ;
+  color: #003300;
+  margin-bottom: 1rem;
+}
+
+.main-recipe-page p {
+  font-family: "Georgia", "DejaVu Serif", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1E1E1E;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align:center;
+  margin-bottom: 1rem;
+}
+
+/*Grid page css */
+body.recipe-grid-page {
+  font-family: "Georgia", "DejaVu Serif", serif;
+  background-color: #e6f0dc;
+  color: #1E1E1E;
+  margin: 1;
+  padding: 0;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  border: 6px solid #ccd5ae;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.2s ease;
+  height: 100%
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #003300;
+  margin: 1rem 0 0.5rem;
+}
+
+.recipe-card p {
+  font-size: 0.95rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-card .button {
+  margin: 0 auto 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #c1e899;
+  color: #003300;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.recipe-card .button:hover {
+  background-color: #7a9d54;
+  color: #ffffff;
+}
+
+.recipe-card .meal-type {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d4b483;
+  margin-top: 0.5rem;
+  letter-spacing: 0.05em;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.recipe-card .time {
+  display: block;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* recipe pages individual*/
+
+body.recipe-page {
+  font-family: "Georgia", "DejaVu Serif", serif;
+  background-color: #e6f0dc;
+  color: #1E1E1E;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.recipe-page main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  border: 1px solid #ccd5ae;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-page h1 {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003300;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-page h2, 
+.recipe-page h3 {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #003300;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-page p, 
+.recipe-page li {
+  font-size: 1rem;
+  color: #1E1E1E;
+}
+
+.recipe-page ul,
+.recipe-page ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.recipe-page img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 1rem auto 2rem;
+}
+
+/* back to home */
+.recipe-page p > a[href="../recipe.html"] {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #c1e899;  
+  color: #003300;            
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.recipe-page p > a[href="../recipe.html"]:hover {
+  background-color: #7a9d54; 
+  color: #ffffff;             
+}
