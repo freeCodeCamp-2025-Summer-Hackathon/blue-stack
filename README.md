@@ -90,11 +90,11 @@ slater- Newspage
 <li>Data base no data base for recipes</li>
 <li>Keep track of what recipe is what recipe</li>
 <li>Few recipes</li>
-<li>Meal of fortune title of page<li>
+<li>Meal of fortune title of page</li>
 <li>Submit a recipe button</li>
 <li>Log in to save your recipe</li>
 <li>Add a list of items in a pantry to select to get a recipe for what you have already</li>
-<li>User could search for an ingredient all recipes that have that ingredient would pop up<li>
+<li>User could search for an ingredient all recipes that have that ingredient would pop up</li>
 <li>Categorize breakfast lunch and dinner with attribute</li>
 <li>Got dinner at the bottom footer</li>
 <li>Standard set of assets</li>
