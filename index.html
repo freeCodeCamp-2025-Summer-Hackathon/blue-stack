@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Roulette</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="./roulette/roulette.css" />
 </head>
 
@@ -17,7 +17,7 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./html/recipe.html">Recipes</a></li>
                 <li><a href="./html/blog.html">Blog</a></li>
                 <li><a href="./html/about.html">About Us</a></li>
@@ -61,28 +61,35 @@
             <h2></h2>
         </section>
     </main>
-
+  
     <div id="roulette">
         <h2 id="roulette-title">Spin the wheel for a random recipe!</h2>
         <div id="roulette-button-container">
-            <button id="roulette-button" class="button" onclick="spin()">Spin</button>
+
+            <!-- tsb's button design -->
+            <button id="roulette-button" class="random-recipe-btn" onclick="spin()">
+            <img src="../images/icons/random.svg" alt="random" />
+            Random Recipe!
+            <img src="../images/icons/random.svg" alt="random" />
+            </button>
+
         </div>
         <div id="roulette-card-container">
             <div id="roulette-card-wrapper"></div>
         </div>
 
-        <script src="./scripts/roulette.js"></script>
+        <script src="./scripts/roulette.js" type="module"></script>
     </div>
      
         <footer class="footer">
 			<div class="footer-left">
                 <a class="footer-title" href="index.html"><h3 ><img class="footer-logo" src="./images/meal-of-fortune-logo.png" alt="Logo"/>Meal of Fortune</h3></a>
 				<p class="footer-links">
-					<a class="link-1" href="index.html">Home</a>
-					<a class="footer-link" href="./recipe-page/recipe.html" >Recipes</a>
-					<a class="footer-link" href="#blog">Blog</a>
-					<a class="footer-link" href="#newsPage">News</a>
-					<a class="footer-link" href="#about"> About</a>
+					<a class="link-1" href="./index.html">Home</a>
+					<a class="footer-link" href="./html/recipe.html" >Recipes</a>
+					<a class="footer-link" href="./html/blog.html">Blog</a>
+					<a class="footer-link" href="./html/newspage.html">News</a>
+					<a class="footer-link" href="./html/about.html">About</a>
 					<a class="footer-link" href="#Contact">Contact Us</a>
                     <a class="footer-link" href="https://www.freecodecamp.org/"><img class="fcc-logo" src="images/fcc_secondary_small.svg" alt="freeCodeCamp Logo">freeCodeCamp</a>
 				</p>

@@ -70,7 +70,7 @@ body {
   line-height: 1.8;
   font-weight: 400;
   text-decoration: none;
-  color: inherit;
+  color: #ece2b1;
 }
 
 .footer .footer-links a:before {
@@ -89,6 +89,7 @@ body {
 /* Footer Right */
 .footer .footer-right {
   width: 50%;
+  margin-top: 50px;
 }
 
 .footer .footer-description {
@@ -96,7 +97,6 @@ body {
   color: #ece2b1;
   font-size: 13px;
   font-weight: normal;
-  margin: 0;
 }
 
 /* uncomment alongside social html if attaching social media links */
@@ -109,7 +109,8 @@ body {
   .footer .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
@@ -234,10 +235,6 @@ body {
 #roulette #roulette-button-container {
   margin: 10px auto;
 }
-#roulette #roulette-button-container #roulette-button {
-  padding: 5px;
-  margin: auto;
-}
 #roulette #roulette-card-container {
   width: 100%;
   height: 500px;
@@ -283,6 +280,10 @@ body {
   width: 300px;
   height: 400px;
   margin: 0 5px;
+}
+#roulette .roulette-card a {
+  text-decoration: none;
+  color: #1e1e1e;
 }
 #roulette .roulette-card .card-image {
   height: 200px;
@@ -385,6 +386,10 @@ body {
   color: #000000;
 }
 
+.random-recipe-btn {
+  margin: auto;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -393,6 +398,12 @@ body {
 }
 
 #news-container {
+  background-color: #e6f0dc;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+#recipes-container {
   background-color: #e6f0dc;
   margin-top: 15px;
   padding: 20px;
